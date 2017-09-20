@@ -9,7 +9,7 @@ import org.testng.annotations.BeforeClass;
 
 
 @CucumberOptions(strict = true, plugin = { "json:target/cucumber-report.json",
-        "html:target/cucumber-report" }, tags = "@smokeTest", features = "src/scenarios/business_trip_base.feature", glue = {
+        "html:target/cucumber-report" }, tags = "@smokeTest", features = "src/scenarios/cucumber_features/business_trip_base.feature", glue = {
         "com.epam.ta.framework.ui.application.steps" })
 
 public class CTCCucumberTest extends AbstractTestNGCucumberTests {
